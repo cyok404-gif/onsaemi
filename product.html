@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>온새미 — 머묾 소파</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,200;125,300;125,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // 첫 화면 깜빡임 방지: 애니메이션 준비 전까지 잠깐 숨김 (스크립트 실패 시 4초 후 자동 해제)
+  document.documentElement.classList.add('is-loading');
+  setTimeout(function () { document.documentElement.classList.remove('is-loading'); }, 4000);
+</script>
+</head>
+<body>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+
+<header class="site-header">
+  <a href="index.html" class="logo" aria-label="온새미 홈">
+    <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="42" stroke="#151515" stroke-width="9"/><circle cx="56" cy="46" r="10" fill="#151515"/></svg>
+  </a>
+  <nav class="main-nav" aria-label="주요 메뉴">
+    <a href="index.html">홈</a><span class="dot" aria-hidden="true">•</span>
+    <a href="index.html#collection" aria-current="page">컬렉션</a><span class="dot" aria-hidden="true">•</span>
+    <a href="#">소재</a><span class="dot" aria-hidden="true">•</span>
+    <a href="#">쇼룸</a><span class="dot" aria-hidden="true">•</span>
+    <a href="index.html#why">브랜드</a><span class="dot" aria-hidden="true">•</span>
+    <a href="#">문의</a>
+  </nav>
+  <div class="header-actions">
+    <a href="#" class="search-btn" aria-label="검색">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    </a>
+    <a href="product.html" class="cart-link">장바구니 (<span data-cart-count>0</span>)</a>
+  </div>
+</header>
+
+<main class="pdp">
+  <div class="pdp-gallery">
+    <div class="pdp-hero"><img src="assets/img/meomum-sofa.webp" alt="리넨 쿠션과 원목 받침의 머묾 소파"></div>
+    <div class="pdp-thumbs">
+      <img src="assets/img/sofa-detail-arm.jpg" alt="팔걸이와 니트 블랭킷 디테일">
+      <img src="assets/img/sofa-wall.jpg" alt="햇살이 드는 벽 앞의 머묾 소파" style="object-position: 40% center">
+    </div>
+  </div>
+
+  <div class="pdp-info">
+    <div class="pdp-intro">
+      <span class="pill">머묾 컬렉션</span>
+      <h1>머묾 소파</h1>
+      <span class="pdp-price" data-price>₩7,600,000</span>
+      <p>낮게 앉아도, 바르게 앉아도 편한 한국 거실을 위한 소파. 원목 받침은 평생 쓰고, 쿠션 커버는 바꿔 가며 씁니다.</p>
+    </div>
+
+    <fieldset class="option-group">
+      <legend>크기</legend>
+      <div class="option-grid option-grid--3">
+        <button type="button" class="option" data-group="size" data-id="2" aria-pressed="false"><span class="option-label">2인</span><span class="option-sub">1,900mm</span></button>
+        <button type="button" class="option" data-group="size" data-id="3" aria-pressed="true"><span class="option-label">3인</span><span class="option-sub">2,300mm</span></button>
+        <button type="button" class="option" data-group="size" data-id="4" aria-pressed="false"><span class="option-label">4인</span><span class="option-sub">2,700mm</span></button>
+      </div>
+    </fieldset>
+
+    <fieldset class="option-group">
+      <legend>프레임 수종</legend>
+      <div class="option-grid option-grid--2">
+        <button type="button" class="option" data-group="wood" data-id="oak" aria-pressed="true">
+          <span class="option-row"><span class="swatch" style="background: #C49A6C"></span><span class="option-text"><span class="option-label">화이트 오크</span><span class="option-sub">기본</span></span></span>
+        </button>
+        <button type="button" class="option" data-group="wood" data-id="walnut" aria-pressed="false">
+          <span class="option-row"><span class="swatch" style="background: #5A3B26"></span><span class="option-text"><span class="option-label">월넛</span><span class="option-sub">+₩900,000</span></span></span>
+        </button>
+      </div>
+    </fieldset>
+
+    <fieldset class="option-group">
+      <legend>쿠션 마감</legend>
+      <div class="option-grid option-grid--1">
+        <button type="button" class="option" data-group="fabric" data-id="linen" aria-pressed="true">
+          <span class="option-row"><span class="swatch" style="background: #D9CDB8"></span><span class="option-text"><span class="option-label">리넨 내추럴</span><span class="option-sub">기본</span></span></span>
+        </button>
+        <button type="button" class="option" data-group="fabric" data-id="wool" aria-pressed="false">
+          <span class="option-row"><span class="swatch" style="background: #4A4744"></span><span class="option-text"><span class="option-label">울 차콜</span><span class="option-sub">+₩300,000</span></span></span>
+        </button>
+        <button type="button" class="option" data-group="fabric" data-id="leather" aria-pressed="false">
+          <span class="option-row"><span class="swatch" style="background: #8A5530"></span><span class="option-text"><span class="option-label">천연 가죽 코냑</span><span class="option-sub">+₩1,800,000</span></span></span>
+        </button>
+      </div>
+    </fieldset>
+
+    <div class="pdp-actions">
+      <button type="button" class="btn-primary" data-add-to-cart>장바구니에 담기</button>
+      <p class="cart-status" role="status" data-cart-status hidden></p>
+      <a href="#" class="text-link">쇼룸에서 앉아 보기</a>
+    </div>
+
+    <ul class="spec-list">
+      <li><span>크기</span><span>폭 <span data-spec="width">2,300mm</span> · 깊이·높이 [확정 필요]</span></li>
+      <li><span>프레임</span><span><span data-spec="wood">화이트 오크</span> 통원목, 친환경 오일 마감</span></li>
+      <li><span>쿠션</span><span><span data-spec="fabric">리넨 내추럴</span>, 커버 분리형</span></li>
+      <li><span>배송</span><span>약 4주 제작 후 무료 설치</span></li>
+      <li><span>관리</span><span>평생 A/S, 연 1회 무상 점검</span></li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col"><span>[쇼룸 주소]</span><span>[고객센터] · [사업자 정보]</span></div>
+    <div class="footer-links">
+      <div class="footer-col"><a href="index.html#collection">컬렉션</a><a href="#">소재</a><a href="#">쇼룸</a></div>
+      <div class="footer-col"><a href="index.html#why">브랜드</a><a href="#">문의</a><a href="#">인스타그램</a></div>
+    </div>
+  </div>
+  <div class="footer-wordmark display" aria-hidden="true">ONSAEMI</div>
+</footer>
+
+</div><!-- /#smooth-content -->
+</div><!-- /#smooth-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
